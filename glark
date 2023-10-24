@@ -10,26 +10,4 @@ nailing-cargo +nightly update -Z minimal-versions -p byteorder
 nailing-cargo +nightly update -Z minimal-versions -p h2
 nailing-cargo +nightly update -Z minimal-versions -p log
 nailing-cargo +nightly update -Z minimal-versions -p tokio
-#nailing-cargo +nightly update -Z minimal-versions -p tocket2
-#nailing-cargo +nightly update -Z minimal-versions -p socket2
-#nailing-cargo +nightly update -Z minimal-versions -p socket2@0.5.3
-#nailing-cargo +nightly update -Z minimal-versions -p 
-#nailing-cargo +nightly update -Z minimal-versions -p socket2@0.5.3
-#nailing-cargo +nightly update -Z minimal-versions -p socket2@0.5.3
-#nailing-cargo +nightly update -Z minimal-versions -p tokio
-#nailing-cargo +nightly update -Z minimal-versions -p socket2@0.5.3
-#nailing-cargo +nightly update -Z minimal-versions -p tokio
-#nailing-cargo +nightly update -Z minimal-versions -p tokio
-#nailing-cargo +nightly update -Z minimal-versions -p tokio
-#nailing-cargo +nightly update -Z minimal-versions -p socket2
-#nailing-cargo +nightly update -Z minimal-versions -p socket2@0.5.3
-#nailing-cargo +nightly update -Z minimal-versions -p socket2
-#nailing-cargo +nightly update -Z minimal-versions -p tokio
-#nailing-cargo +1.59 update -p tokio-util
-#nailing-cargo +1.59 update -p tokio-util@0.7.9
-#nailing-cargo +nightly update -p tokio-util@0.7.9
-#nailing-cargo +nightly update -Z minimal-versions -p tokio
-#nailing-cargo +1.59 update -p tokio-util@0.7.9
-#nailing-cargo +nightly update -p tokio-util@0.7.9
-#nailing-cargo +nightly update -Z minimal-versions -p tokio-util
 nailing-cargo +nightly update -Z minimal-versions -p tokio-util@0.7.9
