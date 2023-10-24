@@ -1182,15 +1182,6 @@ checksum = "e9968e025d6368d1273a93bc23051e30dbf5482475e716d7385d8ec8fbd5b5b6"
 
 [[package]]
 name = "proc-macro2"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b48db3af21624df4894fcd6c2e09f38b43f9fede17b9619b19e030916a3a31b3"
-dependencies = [
- "unicode-xid 0.1.0",
-]
-
-[[package]]
-name = "proc-macro2"
 version = "0.4.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1fa93823f53cfd0f5ac117b189aed6cfdfb2cfc0a9d82e956dd7927595ed7d46"
@@ -1218,15 +1209,6 @@ name = "quote"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5a5071e94480b788e482dd13592c7221b75da33717fd0fd74aee76a01c40b35b"
-
-[[package]]
-name = "quote"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d9588c006b2b46b884b49393cc875b25d9c6a0905eece0ac25fb43700d64f626"
-dependencies = [
- "proc-macro2 0.2.0",
-]
 
 [[package]]
 name = "quote"
@@ -1570,24 +1552,13 @@ dependencies = [
 
 [[package]]
 name = "serde_derive"
-version = "1.0.28"
+version = "1.0.61"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "95f666a2356d87ce4780ea15b14b13532785579a5cad2dcba5292acc75f6efe2"
+checksum = "d04ba8ea0d548a043f5117c5e91c00251b02d10dc89ec846c62ac954816a49a9"
 dependencies = [
- "proc-macro2 0.2.0",
- "quote 0.4.0",
- "serde_derive_internals",
- "syn 0.12.0",
-]
-
-[[package]]
-name = "serde_derive_internals"
-version = "0.20.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1fc848d073be32cd982380c06587ea1d433bc1a4c4a111de07ec2286a3ddade8"
-dependencies = [
- "proc-macro2 0.2.0",
- "syn 0.12.0",
+ "proc-macro2 0.4.4",
+ "quote 0.6.3",
+ "syn 0.14.1",
 ]
 
 [[package]]
@@ -1680,17 +1651,6 @@ checksum = "3e44e1ff7ab9eb88e7b110183942365b1b212198e29dea18f44665f3a3f8cf0f"
 dependencies = [
  "quote 0.3.0",
  "unicode-xid 0.0.3",
-]
-
-[[package]]
-name = "syn"
-version = "0.12.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b186344b4b9c63567a0e29a5b43e2d5ffd02870951722950ab765a93a03433dd"
-dependencies = [
- "proc-macro2 0.2.0",
- "quote 0.4.0",
- "unicode-xid 0.1.0",
 ]
 
 [[package]]
