@@ -1,0 +1,21 @@
+#!/bin/bash
+set -ex
+
+: ${CARGO:=cargo}
+
+update_package () {
+    $CARGO +nightly update -p "$1"
+}
+
+$CARGO +nightly update -Z minimal-versions
+
+# `pest` has quite bad dependency declarations; if you use the
+# minimum specified, there are many compile errors.
+# So (i) update the pest packages to latest and also
+# (ii) update memchr to latest (rather than finding out
+# precisely which versions actually work).
+update_package pest@1.0.0
+update_package pest@2.0.0
+update_package pest_derive@1.0.2
+update_package memchr@2.2.0
+
