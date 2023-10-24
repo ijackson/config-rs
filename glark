@@ -1,8 +1,35 @@
 rm Cargo.lock
 nailing-cargo -ou +1.59 generate-lockfile
 
-min () {
-nailing-cargo +nightly update -Z minimal-versions -p $1
-}
-
-min tokio tokio-util socket2 reqwest h2 byteorder log rustix linux-raw-sys
+nailing-cargo +nightly update -Z minimal-versions -p linux-raw-sys
+nailing-cargo +nightly update -Z minimal-versions -p tokio
+nailing-cargo +nightly update -Z minimal-versions -p rustix
+nailing-cargo +nightly update -Z minimal-versions -p tempfile
+nailing-cargo +nightly update -Z minimal-versions -p reqwest
+nailing-cargo +nightly update -Z minimal-versions -p byteorder
+nailing-cargo +nightly update -Z minimal-versions -p h2
+nailing-cargo +nightly update -Z minimal-versions -p log
+nailing-cargo +nightly update -Z minimal-versions -p tokio
+#nailing-cargo +nightly update -Z minimal-versions -p tocket2
+#nailing-cargo +nightly update -Z minimal-versions -p socket2
+#nailing-cargo +nightly update -Z minimal-versions -p socket2@0.5.3
+#nailing-cargo +nightly update -Z minimal-versions -p 
+#nailing-cargo +nightly update -Z minimal-versions -p socket2@0.5.3
+#nailing-cargo +nightly update -Z minimal-versions -p socket2@0.5.3
+#nailing-cargo +nightly update -Z minimal-versions -p tokio
+#nailing-cargo +nightly update -Z minimal-versions -p socket2@0.5.3
+#nailing-cargo +nightly update -Z minimal-versions -p tokio
+#nailing-cargo +nightly update -Z minimal-versions -p tokio
+#nailing-cargo +nightly update -Z minimal-versions -p tokio
+#nailing-cargo +nightly update -Z minimal-versions -p socket2
+#nailing-cargo +nightly update -Z minimal-versions -p socket2@0.5.3
+#nailing-cargo +nightly update -Z minimal-versions -p socket2
+#nailing-cargo +nightly update -Z minimal-versions -p tokio
+#nailing-cargo +1.59 update -p tokio-util
+#nailing-cargo +1.59 update -p tokio-util@0.7.9
+#nailing-cargo +nightly update -p tokio-util@0.7.9
+#nailing-cargo +nightly update -Z minimal-versions -p tokio
+#nailing-cargo +1.59 update -p tokio-util@0.7.9
+#nailing-cargo +nightly update -p tokio-util@0.7.9
+#nailing-cargo +nightly update -Z minimal-versions -p tokio-util
+nailing-cargo +nightly update -Z minimal-versions -p tokio-util@0.7.9
