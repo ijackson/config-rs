@@ -1,0 +1,8 @@
+rm Cargo.lock
+nailing-cargo -ou +1.59 generate-lockfile
+
+min () {
+nailing-cargo +nightly update -Z minimal-versions -p $1
+}
+
+min tokio socket2 reqwest h2 byteorder log rustix linux-raw-sys
